@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hotel Booking Registration Form</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="heading">
+		<h2>Customer Information</h2>
+	</div>
+	<form class="form" id="form">
+		<div class="form_control">
+			<label>Customer Name: <input type="text" class="name" autocomplete="off" required></label>
+		</div>
+		<div class="form_control">
+			<label>Check-in Date: <input type="date" class="date" autocomplete="off" required></label>
+		</div>
+		<div class="form_control">
+			<label>Total No. of Days: <input type="number" class="days" id="total_days" autocomplete="off" required></label>
+		</div>
+		<div class="form_control">
+			<label>Total No. of Persons: <input type="number" class="persons" id="total_persons" autocomplete="off" required></label>
+		</div>
+		<div class="form_control">
+			<label>Room Type: 
+				<select id="room_type">
+					<option disabled selected>Select Option</option>
+					<option value="delux">Delux Room - 2500</option>
+					<option value="suite">Suite Room - 4000</option>
+				</select>
+			</label>
+		</div>
+
+		<div class="form_control">
+			<label>Amenities:
+				<select id="amenities">
+					<option disabled selected>Select Option</option>
+					<option value="AC">AC - 1000</option>
+					<option value="locker">Locker - 300</option>
+				</select>
+			</label>
+		</div>
+		<div class="form_control">
+			<label>Advance Amount: <input type="number" class="amount" id="advance_payment" autocomplete="off" required></label>
+		</div>
+
+		<div class="div">
+			<h3>Aditional Charges:</h3>
+			<p>Upto 2 People: No Change in Cost <br> Per Day Cost for Extra Person: 1000/-</p>
+		</div>
+
+		<div class="form_control label">
+			<label>Total Room Cost: <span class="amount" id="total_room_cost"></span> </label>
+    	</div>
+    	<div class="form_control">
+    		<label>Total Amenities Cost: <span id="total_amenities_cost" class="amount"></span></label>
+    	</div>
+    	<div class="form_control">
+    		<label>Total Cost: <span id="total_cost" class="amount"></span></label>
+    	</div>
+    	<div class="form_control">
+    		<label>Balance: <span class="amount" id="total_balance"></span></label>
+    	</div>
+
+    	<button type="submit" name="submit" class="submit"> Calculate Total Amount </button>
+	</form>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
