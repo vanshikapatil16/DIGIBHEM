@@ -1,5 +1,4 @@
-# DIGIBHEM
-### Hotel Booking Registration Form
+## Hotel Booking Registration Form
 https://digibhem-hotelbooking-registration.netlify.app/
 
 #### The Total room cost includes the total room cost of 2 persons as more than 2 people pay an additional fee of Rs 1000 per person.
